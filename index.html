@@ -15,16 +15,22 @@
     <title>Accueil</title>
 </head>
 <body> 
+    <!-- LOADING SPINNER -->
+    <section class="loader">
+        <div class="loader__spin">
+            <h2>ohmyfood</h2>
+        </div>
+    </section>
+
      <!-- HEADER -->
-     <header class="header animation"> 
+     <header class="header"> 
         <img src="./public/img/ohmyfood.png" 
              alt="Logo de Oh my food"
              class="header__logo">
     
         <!-- NAV -->
         <nav >
-            <form>
-                <i class="fas fa-map-marker-alt nav__icon-Map"></i>
+            <form class="nav__flex">
                 <input type="search" placeholder="Paris, Belleville" class="nav__texte">
             </form>
         </nav>

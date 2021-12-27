@@ -1,1 +1,29 @@
 /** ACCUEIL */
+
+/* Loading spinner */
+
+.loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 0;
+    animation: loader 3s cubic-bezier(0, 0, 0.13, -0.83);
+    &__spin {
+        margin: auto;
+        border: 10px solid blueviolet;
+        border-top-color: cornsilk;
+        border-bottom-color: cornsilk;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+        z-index: 0;
+        animation: spin 3s;
+    }   
+}
