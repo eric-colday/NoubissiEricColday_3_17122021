@@ -1,33 +1,33 @@
 /** TYPOGRAPHIE */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-primaire;
 }
 
 h1 {
-    font-family: 'Shrikhand', sans-serif;
+    font-family: $font-primaire;
 }
 
 h2{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-secondaire;
     font-size: 42px;
 }
 
 h3{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-secondaire;
     font-weight: 600;
     font-size: 31px;
 }
 
 h4{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-secondaire;
     font-weight: 300;
     font-size: 31px;
     color: #686868;
 }
 
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-secondaire;
     font-size: 28px;
 }
 

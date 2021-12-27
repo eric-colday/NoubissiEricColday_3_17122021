@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/** 1. Utils */
+/** COULEURS */
+/** FONTS */
+/** TEXT AND HEADINGS SIZES */
+/** BREAKPOINTS */
+/** RESPONSIVE */
+/* LOADING SPINNER */
+@keyframes spin {
+  1% {
+    opacity: 10;
+    transform: rotate(0deg) scale(1);
+    z-index: 101;
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  1% {
+    background: linear-gradient(to top, #9256dc, #ff79d9);
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+  }
+  15% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  85% {
+    opacity: 0.3;
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/** 2. Base */
+/** GÉNÉRAL */
+/* Propriété Box-sizing */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/** TYPOGRAPHIE */
+body {
+  font-family: "Shrikhand", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 31px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 31px;
+  color: #686868;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+hr {
+  border-top: 5px solid #99E2D0;
+}
+
+/** 3. Components */
+/** BOUTON GÉNÉRAL */
+/** 4. Layouts */
+/** CONTAINER */
+/** HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 22px;
+  width: 681px;
+}
+/** NAV */
+/** FOOTER */
+/** 5. Pages */
+/** ACCUEIL */
+/** LA PALETTE DU GOÛT */
+/** LA NOTE ENCHANTÉE */
+/** A LA FRANÇAISE */
+/** LE DELICE DES SENS */
+
+/*# sourceMappingURL=style.css.map */

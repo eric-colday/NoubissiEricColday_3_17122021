@@ -11,3 +11,44 @@
     }
 }
 
+/* LOADING SPINNER */ 
+@keyframes spin {
+    1% {
+        opacity: 10;
+        transform: rotate(
+    0deg) scale(1);
+        z-index: 101;
+    }
+    100% {
+        transform: rotate(
+    360deg) scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes loader {
+    1% {
+        background: linear-gradient(to top, #9256dc, #ff79d9);
+        z-index: 101;
+        width: 100%;
+        height: 100%;
+    }
+    15% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.4;
+    }
+    85% {
+        opacity: 0.3;
+    }
+    95% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}

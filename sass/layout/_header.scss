@@ -1,2 +1,12 @@
 /** HEADER */
 
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 22px;
+    width: 681px;
+    @include tablet
+}
