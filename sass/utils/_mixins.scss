@@ -1,0 +1,13 @@
+/** RESPONSIVE */
+@mixin mobile {
+    @media screen and (min-width: 681px) {
+        @content;
+    }   
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+

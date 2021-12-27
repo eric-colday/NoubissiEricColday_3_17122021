@@ -1,0 +1,40 @@
+/** TYPOGRAPHIE */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Shrikhand', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 31px;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 31px;
+    color: #686868;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+input::placeholder {
+    color: black;
+  }
+
+hr{
+    border-top: 5px solid #99E2D0;
+}
