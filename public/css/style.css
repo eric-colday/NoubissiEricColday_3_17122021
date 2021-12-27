@@ -134,9 +134,16 @@ hr {
 /** NAV */
 .nav__icon-Map {
   position: relative;
-  left: 18rem;
-  top: 5px;
+  right: 14rem;
+  bottom: 51px;
   font-size: 32px;
+}
+@media screen and (min-width: 681px) {
+  .nav__icon-Map {
+    right: 34rem;
+    bottom: 1px;
+    font-size: 32px;
+  }
 }
 .nav__flex {
   display: flex;
@@ -146,6 +153,7 @@ hr {
 }
 .nav__texte {
   width: 68rem;
+  height: 7rem;
   background: #F2F2F2;
   border: none;
   box-shadow: inset 0px 7px 6px #d5d5d5;
