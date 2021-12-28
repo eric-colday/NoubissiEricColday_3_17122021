@@ -1,6 +1,6 @@
 /** RESPONSIVE */
 @mixin mobile {
-    @media screen and (max-width: 681px) {
+    @media screen and (max-width: 515px) {
         @content;
     }   
 }

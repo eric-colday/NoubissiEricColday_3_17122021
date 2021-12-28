@@ -7,23 +7,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    @include mobile {
-        height: 22rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    @include mobile{
+        width: 100%;
+        height: 13rem;
+        flex-direction: column;
+        justify-content: space-around;
     }
+
     &__icon{
         position: relative;
         right: 2rem;
         font-size: 30px;
         color: #000;
-        @include mobile {
-            right: 1rem; 
-        }
     }
     &__logo {
         width: 300px;
