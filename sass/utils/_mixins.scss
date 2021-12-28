@@ -1,18 +1,18 @@
 /** RESPONSIVE */
-@mixin tablet {
-    @media screen and (min-width: 681px) {
+@mixin mobile {
+    @media screen and (max-width: 681px) {
         @content;
     }   
 }
 
-@mixin desktop {
-    @media screen and (min-width: 768px) {
+@mixin tabllet {
+    @media screen and (max-width: 768px) {
         @content;
     }
 }
 
 /* LOADING SPINNER */ 
-@keyframes spin {
+/* @keyframes spin {
     1% {
         opacity: 10;
         transform: rotate(
@@ -51,4 +51,4 @@
     100% {
         opacity: 0;
     }
-}
+} */
