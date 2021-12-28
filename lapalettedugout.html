@@ -15,6 +15,289 @@
     <title>La palette du goût</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="header">   
+        <div class="header__flexbox">
+            <a href="index.html" class="header__icon">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <img src="./public/img/ohmyfood.png" 
+                 alt="Logo de Oh my food"
+                 class="header__logo">
+        </div> 
+    </header>
+    
+    <!-- MAIN -->
+    <main class="palette"> 
+        <div class="palette__flexbox">
+            <img src="./public/img/restaurants/lapalettedugout.jpg" 
+                     alt="Photo de la palette du goût"
+                     class="palette__img">
+            <div class="palette__card">
+                <div class="palette__info"> 
+                    <div>
+                        <h1>La palette du goût</h1>
 
+                <!-- ENTRÉES -->  
+                        <h4 class="palette__description">ENTRÉES</h4>
+                        <hr class="palette__largeur">
+                    </div>
+                    <div class="palette__icon">
+                        <i class="fas fa-heart palette__icon-2"></i>
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="palette-bloc__flexbox"> 
+                    <!-- ENTRÉES 1 -->
+                    <div class="palette-bloc__marge">
+                        <!-- Animation Bouton Test -->
+                        <div class="palette-bloc__btn">
+                            <label for="Entree-One" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre">
+                                      Fricassée d'escargot 
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre">
+                                      Au piment d'Espelette
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">25€</span>
+                                <input type="radio" 
+                                       name="Entree" 
+                                       id="Entree-One" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div> 
+                    </div>
+                    <!-- ENTRÉES 2-->
+                    <div class="palette-bloc__marge"> 
+                        <div class="palette-bloc__btn">
+                            <label for="Entree-Two" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre palette-bloc__largeur">
+                                      Foie gras de canard mi-cuit
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre">
+                                      Et ses copeaux de truffe noire
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">35€</span>
+                                <input type="radio" 
+                                       name="Entree" 
+                                       id="Entree-Two" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle palette-arrow"></span>
+                            </label>
+                        </div> 
+                    </div>
+                    <!-- ENTRÉES 3-->
+                    <div class="palette-bloc__marge">
+                        <div class="palette-bloc__btn">
+                            <label for="Entree-Three" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre">
+                                      Oeuf au plat
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre palette-bloc__largeur2">
+                                      Assaisonné à la truffe sur lit de caviar
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">20€</span>
+                                <input type="radio" 
+                                       name="Entree" 
+                                       id="Entree-Three" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div> 
+                    </div>
+                </div>
+
+                <!-- PLATS -->
+                <div class="palette__info"> 
+                    <div>
+                        <h4 class="palette__description">PLATS</h4>
+                        <hr class="palette-bloc__largeur">
+                    </div>
+                </div>
+                <div class="palette-bloc__flexbox">
+                    <!-- PLATS 1 -->
+                    <div class="palette-bloc__marge">
+                        <div class="palette-bloc__btn">
+                            <label for="Plats-One" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre ">
+                                      Filet de boeuf aux herbes
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre palette-bloc__largeur3">
+                                      Accompagné de sa ribambelle de légumes
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">40€</span>
+                                <input type="radio" 
+                                       name="Plats" 
+                                       id="Plats-One" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- PLATS 2 -->
+                    <div class="palette-bloc__marge">
+                        <div class="palette-bloc__btn">
+                            <label for="Plats-Two" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre palette-bloc__largeur4">
+                                      Parmentier de queue de boeuf
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre palette-bloc__largeur4">
+                                      À la truffe noire sur sa purée de panais
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">35€</span>
+                                <input type="radio" 
+                                       name="Plats" 
+                                       id="Plats-Two" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- PLATS 3 -->
+                    <div class="palette-bloc__marge">
+                        <div class="palette-bloc__btn">
+                            <label for="Plats-Three" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre">
+                                      Filet de turbot
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre">
+                                      Aux agrumes
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">44€</span>
+                                <input type="radio" 
+                                       name="Plats" 
+                                       id="Plats-Three" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESSERTS -->
+                <div class="palette__info"> 
+                    <div>
+                        <h4 class="palette__description">DESSERTS</h4>
+                        <hr class="palette-bloc__largeur">
+                    </div>
+                </div>
+                <div class="palette-bloc__flexbox">
+                    <!-- DESSERTS 1-->
+                    <div class="palette-bloc__marge">
+                        <div class="palette-bloc__btn">
+                            <label for="Dessert-One" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre">
+                                    Paris-Brest
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre">
+                                    Revisité
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">18€</span>
+                                <input type="radio" 
+                                       name="Dessert" 
+                                       id="Dessert-One" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- DESSERTS 2-->
+                    <div class="palette-bloc__marge">
+                        <div class="palette-bloc__btn">
+                            <label for="Dessert-Two" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre palette-bloc__largeur5">
+                                    Macaron au chocolat d'exception
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre">
+                                    Et glace à la vanille de Madagascar
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">22€</span>
+                                <input type="radio" 
+                                       name="Dessert" 
+                                       id="Dessert-Two" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- DESSERTS 3-->
+                    <div class="palette-bloc__marge">
+                        <div class="palette-bloc__btn">
+                            <label for="Dessert-Three" class="palette-bloc__Choice">
+                                <span class="palette-bloc__Title">
+                                   <span class="palette-bloc__hauteurTitre">
+                                    Mousse au chocolat
+                                   </span>
+                                   <span class="palette-bloc__espaceSousTitre palette-bloc__largeur4">
+                                    Au piment d'Espelette et à la truffe noire
+                                   </span>
+                                </span>
+                                <span class="palette-bloc__Price">23€</span>
+                                <input type="radio" 
+                                name="Dessert" 
+                                id="Dessert-Three" 
+                                class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOUTON COMMANDER -->
+                <div class="palette__btn">
+                    <button class="btn"
+                            onclick="window.location.href = 'lapalettedugout.html';"> 
+                        Commander
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- FOOTER -->
+     <footer class="footer footer__margeMenus">
+        <div class="footer__marge">
+            <div class="footer__logo"> 
+                <h1>ohmyfood</h1>
+            </div>
+            <div class="footer__elements">
+                <a href="#" class="footer__decoration">
+                    <div class="footer__lien">
+                        <i class="fas fa-utensils footer__icon"></i>
+                        <p>Proposer un restaurant</p>
+                    </div>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <div class="footer__lien">
+                        <i class="fas fa-hands-helping footer__icon2"></i>
+                        <p>Devenir partenaire</p>
+                    </div>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <p class="footer__lien2">Mentions légales</p>
+                </a>
+                <a href="mailto:votreadresse@mail.fr" class="footer__decoration">
+                    <p class="footer__lien3">Contact</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

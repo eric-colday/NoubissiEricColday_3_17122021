@@ -15,7 +15,11 @@
         flex-direction: column;
         justify-content: space-around;
     }
-
+    /* FlexBox pour les pages menus */
+    &__flexbox{
+        display: flex;
+        align-items: center;
+    }
     &__icon{
         position: relative;
         right: 2rem;

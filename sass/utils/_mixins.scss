@@ -1,5 +1,6 @@
 /* LOADING SPINNER */ 
-/* @keyframes spin {
+
+@keyframes spin {
     1% {
         opacity: 10;
         transform: rotate(
@@ -38,12 +39,35 @@
     100% {
         opacity: 0;
     }
-} */
+} 
 
 /* FlexBox */ 
 @mixin flexbox {
     display: flex;
     align-items: center;
+}
+
+/* Animation SlideDown */ 
+@keyframes slideDown {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* animation for checks */
+@keyframes check {
+    0% {
+    color: white;
+    width: 100px;
+    }
+    100% {
+    width: 50px;
+    }
 }
 
 /** RESPONSIVE */

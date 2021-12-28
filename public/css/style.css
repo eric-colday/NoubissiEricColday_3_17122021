@@ -5,47 +5,65 @@
 /** TEXT AND HEADINGS SIZES */
 /** BREAKPOINTS */
 /* LOADING SPINNER */
-/* @keyframes spin {
-    1% {
-        opacity: 10;
-        transform: rotate(
-    0deg) scale(1);
-        z-index: 101;
-    }
-    100% {
-        transform: rotate(
-    360deg) scale(1.5);
-        opacity: 0;
-    }
+@keyframes spin {
+  1% {
+    opacity: 10;
+    transform: rotate(0deg) scale(1);
+    z-index: 101;
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 0;
+  }
 }
-
 @keyframes loader {
-    1% {
-        background: linear-gradient(to top, #9256dc, #ff79d9);
-        z-index: 101;
-        width: 100%;
-        height: 100%;
-    }
-    15% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0.6;
-    }
-    75% {
-        opacity: 0.4;
-    }
-    85% {
-        opacity: 0.3;
-    }
-    95% {
-        opacity: 0.2;
-    }
-    100% {
-        opacity: 0;
-    }
-} */
+  1% {
+    background: linear-gradient(to top, #9256dc, #ff79d9);
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+  }
+  15% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  85% {
+    opacity: 0.3;
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* FlexBox */
+/* Animation SlideDown */
+@keyframes slideDown {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* animation for checks */
+@keyframes check {
+  0% {
+    color: white;
+    width: 100px;
+  }
+  100% {
+    width: 50px;
+  }
+}
 /** RESPONSIVE */
 /** 2. Base */
 /** GÉNÉRAL */
@@ -73,6 +91,11 @@ body {
 
 h1 {
   font-family: "Shrikhand", sans-serif;
+}
+@media screen and (max-width: 515px) {
+  h1 {
+    font-size: 20px;
+  }
 }
 
 h2 {
@@ -160,6 +183,7 @@ hr {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  /* FlexBox pour les pages menus */
 }
 @media screen and (max-width: 515px) {
   .header {
@@ -168,6 +192,10 @@ hr {
     flex-direction: column;
     justify-content: space-around;
   }
+}
+.header__flexbox {
+  display: flex;
+  align-items: center;
 }
 .header__icon {
   position: relative;
@@ -590,6 +618,267 @@ hr {
 }
 
 /** LA PALETTE DU GOÛT */
+.palette {
+  width: 100%;
+  height: 218rem;
+  background-color: #fafafa;
+  /* Bouton commander */
+}
+.palette__flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.palette__card {
+  width: 100%;
+  height: 199rem;
+  margin-top: -44px;
+  border-radius: 50px 50px 0 0;
+  background: #fafafa;
+}
+.palette__img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+.palette__info {
+  display: flex;
+  align-items: center;
+  margin-left: 36px;
+  margin-top: 44px;
+  margin-bottom: 22px;
+  font-size: 20px;
+}
+.palette__description {
+  margin-top: 40px;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.palette__largeur {
+  width: 22%;
+}
+.palette__icon {
+  font-size: 40px;
+  color: #686868;
+  position: relative;
+  left: 22%;
+  bottom: 40px;
+  cursor: pointer;
+}
+.palette__icon:hover > .palette__icon-2 {
+  color: #FF79DA;
+  transform: scale(1.4);
+}
+@media screen and (max-width: 741px) {
+  .palette__icon {
+    left: 1%;
+  }
+}
+@media screen and (max-width: 515px) {
+  .palette__icon {
+    font-size: 20px;
+    bottom: 40px;
+  }
+}
+.palette__icon-2 {
+  font-size: 40px;
+  color: #686868;
+  position: relative;
+  left: 50px;
+  transform: scale(0);
+  transition: transform 400ms;
+}
+@media screen and (max-width: 515px) {
+  .palette__icon-2 {
+    font-size: 20px;
+    left: 24px;
+    bottom: 2px;
+  }
+}
+.palette__btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.palette-bloc {
+  /* MENUS PALETTE */
+}
+.palette-bloc__flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: -46px;
+  animation: slideDown 5s;
+}
+@media screen and (max-width: 515px) {
+  .palette-bloc__flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.palette-bloc__marge {
+  margin-bottom: 15px;
+}
+.palette-bloc__btn {
+  width: 600px;
+  height: 120px;
+  padding-left: 20px;
+  background-color: #fafafa;
+  border: 0px solid black;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 5px 20px 4px #d5d5d5;
+}
+@media screen and (max-width: 741px) {
+  .palette-bloc__btn {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .palette-bloc__btn {
+    width: 300px;
+    height: 75px;
+    border-radius: 15px 15px 15px 15px;
+  }
+}
+.palette-bloc__Choice {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.palette-bloc__Title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 490px;
+  height: 176px;
+}
+.palette-bloc__hauteurTitre {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  top: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+@media screen and (max-width: 515px) {
+  .palette-bloc__hauteurTitre {
+    font-size: 20px;
+    top: 10px;
+  }
+}
+.palette-bloc__espaceSousTitre {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #686868;
+  position: relative;
+  bottom: -27px;
+  right: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+@media screen and (max-width: 515px) {
+  .palette-bloc__espaceSousTitre {
+    font-size: 18px;
+    bottom: -16px;
+  }
+}
+.palette-bloc__largeur {
+  width: 82%;
+}
+.palette-bloc__largeur2 {
+  width: 85%;
+}
+.palette-bloc__largeur3 {
+  width: 97%;
+}
+.palette-bloc__largeur4 {
+  width: 91%;
+}
+.palette-bloc__largeur5 {
+  width: 99%;
+}
+.palette-bloc__largeur6 {
+  width: 85%;
+}
+.palette-bloc__largeur7 {
+  width: 85%;
+}
+.palette-bloc__Price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  position: relative;
+  right: 12px;
+  bottom: 3px;
+  padding-left: 3rem;
+}
+@media screen and (max-width: 515px) {
+  .palette-bloc__Price {
+    font-size: 18px;
+    bottom: 38px;
+  }
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label .fas {
+  border-radius: 0px 15px 15px 0px;
+  height: 78px;
+  color: transparent;
+}
+
+input[type=radio]:checked + .fas {
+  position: relative;
+  bottom: 28px;
+  height: 120px;
+  border-radius: 0px 30px 30px 0px;
+  background-color: #99e2d0;
+  transition-duration: 0.01s;
+  animation: check 0.5s ease-in reverse both;
+}
+@media screen and (max-width: 515px) {
+  input[type=radio]:checked + .fas {
+    bottom: 51px;
+    height: 75px;
+    border-radius: 0px 15px 15px 0px;
+  }
+}
+
+.fa-check-circle::before {
+  font-size: 2.4rem;
+  position: relative;
+  top: 52px;
+  left: 30px;
+  animation: arrow 1s linear;
+}
+@media screen and (max-width: 741px) {
+  .fa-check-circle::before {
+    font-size: 2rem;
+    top: 50px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .fa-check-circle::before {
+    font-size: 14px;
+    top: 34px;
+    left: 10px;
+  }
+}
+
 /** LA NOTE ENCHANTÉE */
 /** A LA FRANÇAISE */
 /** LE DELICE DES SENS */
