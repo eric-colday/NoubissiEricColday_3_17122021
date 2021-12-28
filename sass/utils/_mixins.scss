@@ -1,16 +1,3 @@
-/** RESPONSIVE */
-@mixin mobile {
-    @media screen and (max-width: 515px) {
-        @content;
-    }   
-}
-
-@mixin tabllet {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
-}
-
 /* LOADING SPINNER */ 
 /* @keyframes spin {
     1% {
@@ -52,3 +39,22 @@
         opacity: 0;
     }
 } */
+
+/* FlexBox */ 
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+}
+
+/** RESPONSIVE */
+@mixin mobile {
+    @media screen and (max-width: 515px) {
+        @content;
+    }   
+}
+
+@mixin tabllet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}

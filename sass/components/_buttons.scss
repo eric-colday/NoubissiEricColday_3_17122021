@@ -1,2 +1,24 @@
 /** BOUTON GÉNÉRAL */
 
+.btn{
+    padding: 26px 48px 26px 48px;
+    background: linear-gradient(to bottom, $couleur-secondaire, $couleur-primaire);
+    border: 0px solid $couleur-primaire;
+    margin-top: 60px;
+    color: white;
+    font-size: 26px;
+    border-radius: 45px;
+    box-shadow: 0px 5px 10px 7px $couleur-gris-shadow;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        background: $couleur-secondaire;
+        box-shadow: 0px 8px 14px 9px $couleur-gris-shadow;
+    }
+    @include mobile{
+        font-size: 16px;
+    }
+}

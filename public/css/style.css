@@ -4,7 +4,6 @@
 /** FONTS */
 /** TEXT AND HEADINGS SIZES */
 /** BREAKPOINTS */
-/** RESPONSIVE */
 /* LOADING SPINNER */
 /* @keyframes spin {
     1% {
@@ -46,6 +45,8 @@
         opacity: 0;
     }
 } */
+/* FlexBox */
+/** RESPONSIVE */
 /** 2. Base */
 /** GÉNÉRAL */
 /* Propriété Box-sizing */
@@ -107,6 +108,31 @@ hr {
 
 /** 3. Components */
 /** BOUTON GÉNÉRAL */
+.btn {
+  padding: 26px 48px 26px 48px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border: 0px solid #9356DC;
+  margin-top: 60px;
+  color: white;
+  font-size: 26px;
+  border-radius: 45px;
+  box-shadow: 0px 5px 10px 7px #d5d5d5;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: #FF79DA;
+  box-shadow: 0px 8px 14px 9px #d5d5d5;
+}
+@media screen and (max-width: 515px) {
+  .btn {
+    font-size: 16px;
+  }
+}
+
 /** 4. Layouts */
 /** CONTAINER */
 /** HEADER */
@@ -218,6 +244,119 @@ hr {
   opacity: 0;
   z-index: 0;
   animation: spin 3s;
+}
+
+/* ACCUEIL SLIDER */
+.accueil {
+  height: 510px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  /* FONCTIONNEMENT */
+}
+@media screen and (max-width: 515px) {
+  .accueil {
+    height: 688px;
+  }
+}
+.accueil__titre {
+  margin-top: 50px;
+}
+.accueil__soustitre {
+  margin-top: 20px;
+}
+.accueil-menu {
+  width: 90%;
+  margin: auto;
+}
+.accueil-menu__titre {
+  margin-top: 90px;
+  margin-bottom: 11px;
+}
+.accueil-menu__flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 515px) {
+  .accueil-menu__flexbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.accueil-menu__marge {
+  margin-bottom: 10px;
+}
+.accueil-menu__un {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #9356DC;
+  background-color: #9356DC;
+  border-radius: 25px 25px 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  left: -4%;
+  bottom: -82px;
+}
+@media screen and (max-width: 515px) {
+  .accueil-menu__un {
+    width: 30px;
+    height: 30px;
+    bottom: -50px;
+  }
+}
+.accueil-menu__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  width: 520px;
+  height: 120px;
+  background-color: #fafafa;
+  border: 0px solid black;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 5px 20px 4px #d5d5d5;
+}
+.accueil-menu__btn:hover {
+  cursor: pointer;
+  background: #f1e3ff;
+}
+@media screen and (max-width: 515px) {
+  .accueil-menu__btn {
+    width: 293px;
+    height: 70px;
+    font-size: 18px;
+  }
+}
+.accueil-menu__icon {
+  position: relative;
+  left: -46px;
+}
+@media screen and (max-width: 515px) {
+  .accueil-menu__icon {
+    left: -12px;
+  }
+}
+.accueil-menu__icon-couleur {
+  color: #7c7c7c;
+  font-size: 36px;
+}
+.accueil-menu__icon-couleur:hover {
+  color: #9356DC;
+}
+@media screen and (max-width: 515px) {
+  .accueil-menu__icon-couleur {
+    font-size: 18px;
+  }
 }
 
 /** LA PALETTE DU GOÛT */
