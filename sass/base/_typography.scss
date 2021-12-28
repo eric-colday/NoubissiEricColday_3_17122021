@@ -11,6 +11,9 @@ h1 {
 h2{
     font-family: $font-secondaire;
     font-size: 42px;
+    @include mobile{
+        font-size: 30px;
+    }
 }
 
 h3{
@@ -24,11 +27,17 @@ h4{
     font-weight: 300;
     font-size: 31px;
     color: #686868;
+    @include mobile{
+        font-size: 22px;
+    }
 }
 
 p{
     font-family: $font-secondaire;
     font-size: 28px;
+    @include mobile {
+        font-size: 20px;
+    }
 }
 
 input::placeholder {

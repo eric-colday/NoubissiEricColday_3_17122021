@@ -79,6 +79,11 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 42px;
 }
+@media screen and (max-width: 515px) {
+  h2 {
+    font-size: 30px;
+  }
+}
 
 h3 {
   font-family: "Roboto", sans-serif;
@@ -92,10 +97,20 @@ h4 {
   font-size: 31px;
   color: #686868;
 }
+@media screen and (max-width: 515px) {
+  h4 {
+    font-size: 22px;
+  }
+}
 
 p {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
+}
+@media screen and (max-width: 515px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 input::placeholder {
@@ -217,6 +232,56 @@ hr {
 }
 
 /** FOOTER */
+.footer {
+  height: 37rem;
+  background-color: #323232;
+}
+@media screen and (max-width: 515px) {
+  .footer {
+    width: 681px;
+  }
+}
+.footer__margeMenus {
+  margin-top: 10rem;
+}
+.footer__marge {
+  width: 90%;
+  margin: auto;
+}
+.footer__logo {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  color: white;
+}
+.footer__elements {
+  color: white;
+}
+.footer__decoration {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.footer__lien {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.footer__icon {
+  margin-right: 30px;
+  font-size: 23px;
+}
+.footer__icon2 {
+  margin-right: 20px;
+  font-size: 23px;
+}
+.footer__lien2 {
+  margin-bottom: 16px;
+}
+.footer__lien3 {
+  margin-bottom: 16px;
+}
+
 /** 5. Pages */
 /** ACCUEIL */
 /* Loading spinner */
@@ -256,10 +321,12 @@ hr {
   flex-direction: column;
   text-align: center;
   /* FONCTIONNEMENT */
+  /* RESTAURANTS */
 }
 @media screen and (max-width: 515px) {
   .accueil {
     height: 688px;
+    margin-top: -1rem;
   }
 }
 .accueil__titre {
@@ -335,6 +402,7 @@ hr {
     width: 293px;
     height: 70px;
     font-size: 18px;
+    border-radius: 15px 15px 15px 15px;
   }
 }
 .accueil-menu__icon {
@@ -357,6 +425,167 @@ hr {
   .accueil-menu__icon-couleur {
     font-size: 18px;
   }
+}
+.accueil-proj {
+  width: 90%;
+  height: 86rem;
+  margin: auto;
+  /* 4 CARDS RESTAURANTS */
+}
+@media screen and (max-width: 741px) {
+  .accueil-proj {
+    height: 161rem;
+  }
+}
+.accueil-proj__marge {
+  width: 90%;
+}
+.accueil-proj__titre {
+  padding-top: 79px;
+}
+.accueil-proj__flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__flexbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.accueil-proj__card {
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+  border: 0px solid black;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 5px 20px 4px #d5d5d5;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.accueil-proj__card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 8px 14px 9px #d5d5d5;
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__card {
+    width: 290px;
+    height: 300px;
+  }
+}
+.accueil-proj__img {
+  width: 100%;
+  height: 190px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__img {
+    height: 200px;
+  }
+}
+.accueil-proj__nouveau {
+  border: 0px solid black;
+  border-radius: 4px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  position: relative;
+  bottom: 59%;
+  left: 60%;
+  font-size: 26px;
+  color: #309d82;
+  font-weight: 500;
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__nouveau {
+    width: 134px;
+    height: 50px;
+    bottom: 63%;
+    left: 48%;
+  }
+}
+.accueil-proj__fontSizeP {
+  font-size: 20px;
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__fontSizeP {
+    font-size: 28px;
+  }
+}
+.accueil-proj__info {
+  display: flex;
+  align-items: center;
+  margin-left: 26px;
+  margin-top: -24px;
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__info {
+    margin-top: -34px;
+  }
+}
+.accueil-proj__fontSizeH3 {
+  font-size: 22px;
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__fontSizeH3 {
+    font-size: 22px;
+  }
+}
+.accueil-proj__fontSizeH4 {
+  font-size: 20px;
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__fontSizeH4 {
+    font-size: 21px;
+  }
+}
+.accueil-proj__info2 {
+  display: flex;
+  align-items: center;
+  margin-left: 26px;
+  margin-top: 22px;
+}
+.accueil-proj__decoration {
+  text-decoration: none;
+  color: black;
+}
+.accueil-proj__description {
+  margin-top: 6px;
+}
+.accueil-proj__icon {
+  font-size: 24px;
+  color: #686868;
+  position: relative;
+  left: 19px;
+  bottom: 14px;
+  cursor: pointer;
+}
+.accueil-proj__icon:hover > .accueil-proj__icon-2 {
+  color: #FF79DA;
+  transform: scale(1.15);
+}
+@media screen and (max-width: 515px) {
+  .accueil-proj__icon {
+    font-size: 24px;
+    left: 7%;
+  }
+}
+.accueil-proj__icon-2 {
+  font-size: 24px;
+  color: #686868;
+  position: relative;
+  left: 28px;
+  transform: scale(0);
+  transition: transform 400ms;
 }
 
 /** LA PALETTE DU GOÛT */
