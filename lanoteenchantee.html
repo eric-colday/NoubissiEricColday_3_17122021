@@ -15,6 +15,289 @@
     <title>La note enchantée</title>
 </head>
 <body> 
+     <!-- HEADER -->
+     <header class="header"> 
+        <div class="header__flexbox">
+            <a href="index.html" class="header__icon">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <img src="./public/img/ohmyfood.png" 
+                 alt="Logo de Oh my food"
+                 class="header__logo">
+        </div> 
+    </header>
 
+    <!-- MAIN -->
+    <main class="note"> 
+        <div class="note__flexbox">
+            <img src="./public/img/restaurants/lanoteenchantee.jpg" 
+                     alt="Photo de la palette du goût"
+                     class="note__img">
+            <div class="note__card">
+                <div class="note__info"> 
+                    <div>
+                        <h1>La note enchantée</h1>
+
+                <!-- ENTRÉES -->
+                        <h4 class="note__description">ENTRÉES</h4>
+                        <hr class="note__largeur">
+                    </div>
+                    <div class="note__icon">
+                        <i class="fas fa-heart note__icon-2"></i>
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="note-bloc__flexbox">
+                     <!-- ENTRÉES 1 -->
+                     <div class="note-bloc__marge">
+                        <!-- Animation Bouton Test -->
+                        <div class="note-bloc__btn">
+                            <label for="Entree-One" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre">
+                                    Ravioles de foie gras 
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre note-bloc__largeur">
+                                    Accompagnés de leur crème à la truffe
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">25€</span>
+                                <input type="radio" 
+                                       name="Entree" 
+                                       id="Entree-One" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div> 
+                    </div>
+                    <!-- ENTRÉES 2-->
+                    <div class="note-bloc__marge"> 
+                        <div class="note-bloc__btn">
+                            <label for="Entree-Two" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre ">
+                                    Caviar osciètre
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre">
+                                    Sur blini à la farine de blé noir
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">35€</span>
+                                <input type="radio" 
+                                       name="Entree" 
+                                       id="Entree-Two" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div> 
+                    </div>
+                    <!-- ENTRÉES 3-->
+                    <div class="note-bloc__marge">
+                        <div class="note-bloc__btn">
+                            <label for="Entree-Three" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre note-bloc__largeur2">
+                                    Homard et espuma de potiron
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre">
+                                    Mariné aux zestes d'orange
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">20€</span>
+                                <input type="radio" 
+                                       name="Entree" 
+                                       id="Entree-Three" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div> 
+                    </div>
+                </div>
+                
+                <!-- PLATS -->
+                <div class="note__info"> 
+                    <div>
+                        <h4 class="note__description">PLATS</h4>
+                        <hr class="note-bloc2__largeur">
+                    </div>
+                </div>
+                <div class="note-bloc__flexbox">
+                    <!-- PLATS 1-->
+                    <div class="note-bloc__marge">
+                        <div class="note-bloc__btn">
+                            <label for="Plats-One" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre note-bloc__largeur3">
+                                    Noix de coquilles Saint-Jacques
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre">
+                                    Sur lit de purée de céleri-rave
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">40€</span>
+                                <input type="radio" 
+                                       name="Plats" 
+                                       id="Plats-One" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- PLATS 2 -->
+                    <div class="note-bloc__marge">
+                        <div class="note-bloc__btn">
+                            <label for="Plats-Two" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre">
+                                    Langoustine poêlée
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre">
+                                    Purée de patate douce
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">35€</span>
+                                <input type="radio" 
+                                       name="Plats" 
+                                       id="Plats-Two" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- PLATS 3 -->
+                    <div class="note-bloc__marge">
+                        <div class="note-bloc__btn">
+                            <label for="Plats-Three" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre">
+                                    Mijoté de queue de boeuf
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre">
+                                    Et riz sauvage aux zestes de citron
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">44€</span>
+                                <input type="radio" 
+                                       name="Plats" 
+                                       id="Plats-Three" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DESSERTS -->
+                <div class="note__info"> 
+                    <div>
+                        <h4 class="note__description">DESSERTS</h4>
+                        <hr class="note-bloc3__largeur">
+                    </div>
+                </div>
+                <div class="note-bloc__flexbox">
+                    <!-- DESSERTS 1-->
+                    <div class="note-bloc__marge">
+                        <div class="note-bloc__btn">
+                            <label for="Dessert-One" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre note-bloc__largeur">
+                                    Macaron noisette et chocolat
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre note-bloc__largeur4">
+                                    Glace au caramel brun et sel de Guérande
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">18€</span>
+                                <input type="radio" 
+                                       name="Dessert" 
+                                       id="Dessert-One" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- DESSERTS 2-->
+                    <div class="note-bloc__marge">
+                        <div class="note-bloc__btn">
+                            <label for="Dessert-Two" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre">
+                                    Baba au rhum revisité
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre">
+                                    Avec son coulis de citron
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">22€</span>
+                                <input type="radio" 
+                                       name="Dessert" 
+                                       id="Dessert-Two" 
+                                       class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- DESSERTS 3-->
+                    <div class="note-bloc__marge">
+                        <div class="note-bloc__btn">
+                            <label for="Dessert-Three" class="note-bloc__Choice">
+                                <span class="note-bloc__Title">
+                                   <span class="note-bloc__hauteurTitre">
+                                    Tarte au citron meringuée
+                                   </span>
+                                   <span class="note-bloc__espaceSousTitre">
+                                    Déstructurée
+                                   </span>
+                                </span>
+                                <span class="note-bloc__Price">23€</span>
+                                <input type="radio" 
+                                name="Dessert" 
+                                id="Dessert-Three" 
+                                class="Check__checked">
+                                <span class="fas fa-check-circle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOUTON COMMANDER -->
+                <div class="note__btn">
+                    <button class="btn"
+                            onclick="window.location.href = '#'"> 
+                        Commander
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer footer__margeMenus">
+        <div class="footer__marge">
+            <div class="footer__logo"> 
+                <h1>ohmyfood</h1>
+            </div>
+            <div class="footer__elements">
+                <a href="#" class="footer__decoration">
+                    <div class="footer__lien">
+                        <i class="fas fa-utensils footer__icon"></i>
+                        <p>Proposer un restaurant</p>
+                    </div>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <div class="footer__lien">
+                        <i class="fas fa-hands-helping footer__icon2"></i>
+                        <p>Devenir partenaire</p>
+                    </div>
+                </a>
+                <a href="#" class="footer__decoration">
+                    <p class="footer__lien2">Mentions légales</p>
+                </a>
+                <a href="mailto:votreadresse@mail.fr" class="footer__decoration">
+                    <p class="footer__lien3">Contact</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

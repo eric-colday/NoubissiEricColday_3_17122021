@@ -1,5 +1,226 @@
 /** A LA FRANÇAISE */
 
+.alafrancaise{
+    width: 100%;
+    height: 218rem;
+    background-color: #fafafa;
+    &__flexbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__card{
+        width: 100%;
+        height:199rem;
+        margin-top: -44px;
+        border-radius: 50px 50px 0 0;
+        background: #fafafa;
+    }
+    &__img{
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-left: 36px;
+        margin-top: 44px;
+        margin-bottom: 22px;
+        font-size: 20px;
+    }
+    &__description{
+        margin-top: 40px;
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    &__largeur{
+        width: 22%;
+    }
+    &__icon{
+        font-size: 40px;
+        color: #686868;
+        position: relative;
+        left:22%;
+        bottom: 40px;
+        cursor: pointer;
+        &:hover > .alafrancaise__icon-2{
+            color: $couleur-secondaire;
+            transform: scale(1.4);
+        }
+        @include tabllet {
+            left:1%;
+        }
+        @include mobile{
+            font-size: 20px;
+            bottom: 40px;
+        }
+    }
+    &__icon-2 {
+        font-size: 40px;
+        color: #686868;
+        position: relative;
+        left: 50px;
+        transform: scale(0);
+        transition: transform 400ms;
+        @include mobile{
+            font-size: 20px;
+            left: 24px;
+            bottom: 2px;
+        }
+    }
+    /* Bouton commander */
+    &__btn{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
 
+.alafrancaise-bloc{
+    &__flexbox{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: -46px;
+        animation: slideDown 5s;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+    }
+    /* MENUS PALETTE */
+    &__marge{
+        margin-bottom: 15px;
+    }
+    &__btn{
+        width: 600px;
+        height: 120px;
+        padding-left: 20px;
+        background-color: #fafafa;
+        border: 0px solid black;
+        border-radius: 30px 30px 30px 30px;
+        box-shadow: 0px 5px 20px 4px #d5d5d5;
+        @include tabllet {
+            width: 500px;
+        }
+        @include mobile {
+            width: 300px;
+            height: 75px; 
+            border-radius: 15px 15px 15px 15px;
+        }
+    }
+    &__Choice{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__Title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 490px;
+        height: 176px;
+    }
+    &__hauteurTitre{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        top: 21px;
+        font-family: $font-secondaire;
+        font-weight: 600; 
+        font-size: 32px;
+        @include mobile{
+            font-size: 20px;
+            top: 10px;
+        }
+    }
+    &__espaceSousTitre{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #686868;
+        position: relative;
+        bottom: -27px;
+        right: 1px;
+        font-family: $font-secondaire;
+        font-weight: 300;
+        font-size: 25px;
+        @include mobile{
+            font-size: 18px;
+            bottom: -16px;
+        }
+    }
+    &__largeur{
+        width: 82%;
+    }
+    &__largeur2{
+        width: 86%;
+    }
+    &__largeur3{
+        width: 83%;
+    }
+    &__Price {
+        font-family: $font-secondaire;
+        font-weight: 300;
+        font-size: 25px;
+        position: relative;
+        right: 12px;
+        bottom: 3px;
+        padding-left: 3rem;
+        @include mobile{
+            font-size: 18px;
+            bottom: 38px;
+        }
+    }
+}
 
+input[type=radio] {
+    display: none;
+}
 
+label .fas {
+    border-radius: 0px 15px 15px 0px;
+    height: 78px;
+    color: transparent;
+}
+
+input[type=radio]:checked + .fas {
+    position: relative;
+    bottom: 28px;
+    height: 120px;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #99e2d0;
+    transition-duration: 0.01s;
+    animation: check 0.5s ease-in reverse both;
+    @include mobile{
+        bottom: 51px;
+        height: 75px;
+        border-radius: 0px 15px 15px 0px;
+    }
+}
+
+.fa-check-circle::before {  
+    font-size: 2.4rem;
+    position: relative;
+    top: 52px;
+    left: 30px;
+    animation: arrow 1s linear;
+    @include tabllet{
+        font-size: 2rem;
+        top: 50px;
+        left: 20px;
+    }
+    @include mobile{
+        font-size: 14px;
+        top: 34px;
+        left: 10px;
+    }
+}
