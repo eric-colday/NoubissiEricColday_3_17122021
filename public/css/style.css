@@ -6,7 +6,7 @@
 /** BREAKPOINTS */
 /* LOADING SPINNER */
 @keyframes spin {
-  1% {
+  1% { 
     opacity: 10;
     transform: rotate(0deg) scale(1);
     z-index: 101;
@@ -172,7 +172,6 @@ hr {
 }
 
 /** 4. Layouts */
-/** CONTAINER */
 /** HEADER */
 .header {
   width: 95%;
